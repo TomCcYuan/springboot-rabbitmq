@@ -21,4 +21,11 @@ public class MessageEntity implements Serializable {
     public void setContent(String content) {
         this.content = content;
     }
+
+    @Override
+    public String toString() {
+        return "MessageEntity{" +
+                "content='" + content + '\'' +
+                '}';
+    }
 }

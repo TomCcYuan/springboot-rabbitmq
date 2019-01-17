@@ -53,7 +53,7 @@ public class RabbitMqFastJsonConverter
         }
         messageProperties.setContentType(MessageProperties.CONTENT_TYPE_JSON);
         messageProperties.setContentEncoding(DEFAULT_CHART_SET);
-        if (bytes != null) {
+        if (bytes.length != 0) {
             messageProperties.setContentLength(bytes.length);
         }
         classMapper.fromClass(o.getClass(), messageProperties);
